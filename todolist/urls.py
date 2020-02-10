@@ -5,5 +5,6 @@ urlpatterns = [
     path('', views.index, name='index'),
     path('add', views.addTodo, name='add'),
     path('complete/<todo_id>', views.completeTodo, name='complete'),
-    path('deleteTodo>', views.deleteTodo, name='deleteTodo'),
+    path('deleteSingle>', views.deleteTodo, name='deleteSingle'),
+    path('deleteAll>', views.deleteAllTodo, name='deleteAll'),
 ]
